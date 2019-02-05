@@ -40,7 +40,6 @@ def site_map(url):
             break
         buf = []
 
-        print ("ALL",alllinks)
         for i in alllinks:
             test = i in readylinks
 
@@ -73,11 +72,11 @@ def site_map(url):
         for z in buf:
             if z in readylinks:
                 buf.remove(z)
-                
+
         alllinks=buf
 
     return alldata
 
 
-site_map('https://clearcode.pl/')
+site_map('http://localhost:8000')
 
